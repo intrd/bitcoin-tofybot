@@ -20,9 +20,14 @@ namespace bitcoin;
 use database\dbintrd as db;
 use php\intrdCommons as i;
 
-class tofybot {
-	public function hello(){
-		echo "\r\n*** TOFY - bitcoin trader bot (former HAL10K) ***";
+class okc {
+	public function get_LastPrice(){
+		global $cookie;
+		$header=array();
+		$result=i::url_get("https://www.okcoin.com/api/ticker.do?ok=1",$cookie,"r",$header);
+		$ticker=json_decode($result["content"]);
+		$last_price=$ticker->ticker->last;
+		echo "\n> Last price: $last_price";
 	}
 
 }

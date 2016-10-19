@@ -34,6 +34,6 @@ $conf["data_path"]=$conf["root"]."DATA/";
 $cookie=$conf["tmp_path"]."cookie"; 
 
 bot::hello();
-okc::hello();
+okc::get_LastPrice();
 
 
