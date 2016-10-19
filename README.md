@@ -60,7 +60,9 @@ $ git pull && composer update
 ```
 ## Usage
 
+```
 $ ./run.sh
+```
 
 That's all, <br/>
 Script this 4 your needs and respect the CC license, thanks!
