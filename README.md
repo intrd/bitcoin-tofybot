@@ -1,6 +1,6 @@
 <!-- docbloc -->
 <span id='docbloc'>
-Bitcoin - PHP Trader bot (former HAL10K)
+TOFY - bitcoin trader bot (former HAL10K)
 <table>
 <tr>
 <th>Package</th>

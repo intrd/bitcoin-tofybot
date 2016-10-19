@@ -1,6 +1,6 @@
 {
     "name": "intrd/bitcoin-tofybot",
-    "description": "Bitcoin - PHP Trader bot (former HAL10K)",
+    "description": "TOFY - bitcoin trader bot (former HAL10K)",
     "keywords": ["bitcoin","bot","eggdrop","php","okcoin"],
     "homepage": "http://github.com/intrd/bitcoin-tofybot",
     "authors": [

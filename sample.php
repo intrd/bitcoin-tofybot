@@ -1,6 +1,6 @@
 <?php
 /**
- * Bitcoin - PHP Trader bot (former HAL10K)
+ * TOFY - bitcoin trader bot (former HAL10K)
 * 
 * @package intrd/bitcoin-tofybot
 * @version 1.0
@@ -32,6 +32,8 @@ $ext_path=$conf["root"]."../";
 $conf["tmp_path"]=$conf["root"]."TMP/";
 $conf["data_path"]=$conf["root"]."DATA/";
 
+$browser_agent="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0";
+$cookie=$conf["tmp_path"]."cookie"; 
 
 bot::hello();
 okc::hello();

@@ -1,6 +1,6 @@
 #!/bin/bash
 ##
-# Bitcoin - PHP Trader bot (former HAL10K)
+# TOFY - bitcoin trader bot (former HAL10K)
 #
 # @package intrd/bitcoin-tofybot
 # @version 1.0
