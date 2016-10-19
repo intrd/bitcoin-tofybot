@@ -1,0 +1,37 @@
+{
+    "name": "intrd/bitcoin-tofybot",
+    "description": "Bitcoin - OKC Futures trader bot",
+    "keywords": ["bitcoin","bot","eggdrop","php","okcoin"],
+    "homepage": "http://github.com/intrd/bitcoin-tofybot",
+    "authors": [
+            {
+                "name": "intrd (Danilo Salles)",
+                "email": "x@dann.com.br",
+                "homepage": "http://dann.com.br",
+                "role": "Developer"
+            },
+            {
+                "name": "rafadefine (Rafael)",
+                "email": "rafaeldefine@gmail.com",
+                "homepage": "http://nonononno.com",
+                "role": "Developer"
+            }
+        ],
+    "license": "CC-BY-SA-4.0",
+    "require": {
+        "php": ">=5.3.0",
+        "intrd/php-common": ">=1.0.x-dev <dev-master",
+        "intrd/sqlite-dbintrd": ">=1.0.x-dev <dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "bitcoin\\":"src/"
+        }
+    },
+    "extra": {
+        "author_twitter":"intrd",
+        "copyright_author":"intrd",
+        "license_title":"Creative Commons Attribution-ShareAlike 4.0",
+        "license_url":"http://creativecommons.org/licenses/by-sa/4.0"
+    }
+}
