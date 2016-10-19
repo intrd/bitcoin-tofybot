@@ -1,9 +1,9 @@
 <?php
 /**
- * Bitcoin - OKC Futures trader bot
+ * Bitcoin - PHP Trader bot (former HAL10K)
 * 
 * @package intrd/bitcoin-tofybot
-* @version 1.1
+* @version 1.0
 * @tags bitcoin, bot, eggdrop, php, okcoin
 * @link http://github.com/intrd/bitcoin-tofybot
 * @author intrd (Danilo Salles) - http://dann.com.br
@@ -19,6 +19,7 @@
 require __DIR__ . '/vendor/autoload.php';
 use php\intrdCommons as i;
 use bitcoin\tofybot as bot;
+use bitcoin\okc as okc;
 use database\dbintrd as db;
 
 if (!file_exists("config.ini")) die("\n*** config.ini does no exist.\n");
@@ -33,6 +34,6 @@ $conf["data_path"]=$conf["root"]."DATA/";
 
 
 bot::hello();
-
+okc::hello();
 
 

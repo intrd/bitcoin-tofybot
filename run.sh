@@ -1,8 +1,8 @@
 ##
-# Bitcoin - OKC Futures trader bot
+# Bitcoin - PHP Trader bot (former HAL10K)
 #
 # @package intrd/bitcoin-tofybot
-# @version 1.1
+# @version 1.0
 # @tags bitcoin, bot, eggdrop, php, okcoin
 # @link http://github.com/intrd/bitcoin-tofybot
 # @author intrd (Danilo Salles) - http://dann.com.br

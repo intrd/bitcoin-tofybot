@@ -1,6 +1,6 @@
 <!-- docbloc -->
 <span id='docbloc'>
-Bitcoin - OKC Futures trader bot
+Bitcoin - PHP Trader bot (former HAL10K)
 <table>
 <tr>
 <th>Package</th>
@@ -8,7 +8,7 @@ Bitcoin - OKC Futures trader bot
 </tr>
 <tr>
 <th>Version</th>
-<td>1.1</td>
+<td>1.0</td>
 </tr>
 <tr>
 <th>Tags</th>

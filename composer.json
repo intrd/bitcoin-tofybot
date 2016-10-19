@@ -1,6 +1,6 @@
 {
     "name": "intrd/bitcoin-tofybot",
-    "description": "Bitcoin - OKC Futures trader bot",
+    "description": "Bitcoin - PHP Trader bot (former HAL10K)",
     "keywords": ["bitcoin","bot","eggdrop","php","okcoin"],
     "homepage": "http://github.com/intrd/bitcoin-tofybot",
     "authors": [
