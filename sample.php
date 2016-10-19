@@ -31,8 +31,6 @@ i::check_dir(array($conf["root"]."DATA/",$conf["root"]."TMP/",$conf["root"]."LOG
 $ext_path=$conf["root"]."../";
 $conf["tmp_path"]=$conf["root"]."TMP/";
 $conf["data_path"]=$conf["root"]."DATA/";
-
-$browser_agent="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0";
 $cookie=$conf["tmp_path"]."cookie"; 
 
 bot::hello();

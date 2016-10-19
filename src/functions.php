@@ -34,7 +34,7 @@ class okc {
 		$result=i::url_get("https://www.okcoin.com/api/ticker.do?ok=1",$cookie,"r",$header);
 		$ticker=json_decode($result["content"]);
 		$last_price=$ticker->ticker->last;
-		echo "\n>Last price: $last_price";
+		echo "\n> Last price: $last_price";
 	}
 
 }
