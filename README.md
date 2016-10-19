@@ -60,6 +60,8 @@ $ git pull && composer update
 ```
 ## Usage
 
+Edit config.ini, configure and run!
+
 ```
 $ ./run.sh
 ```
