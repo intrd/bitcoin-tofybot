@@ -45,7 +45,19 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 //$params = array('api_key' => $secrets["API_KEY"]);
 //$result = $client -> userinfoApi($params);
 
-$params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
-$result = $client -> tickerFutureApi($params);
+//$params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
+//$result = $client -> tickerFutureApi($params);
+
+// $params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
+// $result = $client -> tradesFutureApi($params);
+
+// $params = array('api_key' => $secrets["API_KEY"]);
+// $result = $client -> userinfoFutureApi($params);
+
+// $params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week');
+// $result = $client -> positionFutureApi($params);
+
+$params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
+$result = $client -> singleBondPositionFutureApi($params);
 
 print_r($result);

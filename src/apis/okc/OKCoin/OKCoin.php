@@ -111,12 +111,12 @@ class OKCoin extends OKCoinBase {
 	
 	//获取OKCoin期货账户信息 （全仓）
 	public function userinfoFutureApi($params = null) {
-		return $this -> post("/api/v1/future_userinfo.do", $params);
+		return $this -> post("/api/v1/future_userinfo_4fix.do", $params);
 	}
 
 	//获取用户持仓获取OKCoin期货账户信息 （全仓）
 	public function positionFutureApi($params = null) {
-		return $this -> post("/api/v1/future_position.do", $params);
+		return $this -> post("/api/v1/future_position_4fix.do", $params);
 	}
 
 	//期货下单
