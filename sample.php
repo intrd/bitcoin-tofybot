@@ -48,5 +48,4 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 $params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
 $result = $client -> tickerFutureApi($params);
 
-
 print_r($result);
