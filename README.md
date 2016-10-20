@@ -60,7 +60,9 @@ $ git pull && composer update
 ```
 ## Usage
 
-Edit config.ini, configure and run!
+Create empty dirs:
+	DATA, LOGS, TMP
+Edit config.ini, configure and..
 
 ```
 $ ./run.sh
