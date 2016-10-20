@@ -60,10 +60,9 @@ $ git pull && composer update
 ```
 ## Usage
 
-Create empty dirs:
-	DATA, LOGS, TMP
-	
-Edit config.ini, configure and..
+1. Create empty dirs, LOGS, TMP
+2. Request DATA dir content..
+3. Review config.ini, and..
 
 ```
 $ ./run.sh
