@@ -33,11 +33,18 @@ $conf["data_path"]=$conf["root"].$conf["data"];
 $conf["logs_path"]=$conf["root"].$conf["logs"];
 i::check_dir(array($conf["data_path"],$conf["tmp_path"],$conf["logs_path"])); 
 $conf["cookie1"]=$conf["tmp_path"].$conf["cookie1"];
+$db_path=$conf["data_path"].$conf["dbfile"];
 
 if (!file_exists($conf["data_path"]."secrets.ini")) die("\n*** secrets.ini does no exist.\n");
 $secrets = parse_ini_file($conf["data_path"]."secrets.ini", false);
 
 bot::hello(); //bot welcome screen
+
+
+//$dbtest = new db("transactions","filter:id='156'");
+//var_dump($dbtest);
+//die;
+
 
 $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets["SECRET_KEY"]));
 
