@@ -19,8 +19,8 @@
 require __DIR__ . '/vendor/autoload.php';
 use php\intrdCommons as i;
 use bitcoin\tofybot as bot;
-use bitcoin\okc as okc;
 use database\dbintrd as db;
+use OKCoin as okc;
 
 if (!file_exists("config.ini")) die("\n*** config.ini does no exist.\n");
 $conf = parse_ini_file("config.ini", false);
@@ -32,8 +32,20 @@ $ext_path=$conf["root"]."../";
 $conf["tmp_path"]=$conf["root"]."TMP/";
 $conf["data_path"]=$conf["root"]."DATA/";
 $cookie=$conf["tmp_path"]."cookie"; 
+if (!file_exists($conf["data_path"]."secrets.ini")) die("\n*** config.ini does no exist.\n");
+$secrets = parse_ini_file($conf["data_path"]."secrets.ini", false);
 
-bot::hello();
-okc::get_LastPrice();
+bot::hello(); //bot welcome screen
 
+$client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets["SECRET_KEY"]));
 
+//$params = array('symbol' => 'btc_usd', 'size' => 5);
+//$result = $client -> depthApi($params);
+
+//$params = array('api_key' => $secrets["API_KEY"]);
+//$result = $client -> userinfoApi($params);
+
+$params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
+$result = $client -> tickerFutureApi($params);
+
+print_r($result);

@@ -25,7 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "bitcoin\\":"src/"
+            "bitcoin\\":"src/",
+            "":"src/apis/okcoin/OKCoin/"
         }
     },
     "extra": {
