@@ -62,6 +62,7 @@ $ git pull && composer update
 
 Create empty dirs:
 	DATA, LOGS, TMP
+	
 Edit config.ini, configure and..
 
 ```
