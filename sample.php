@@ -84,11 +84,11 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 // die;
 
 
-$okcPL_constant="0.31914893617";
-$buyd_price="235.91";
-$last_price="235.64";
-echo "\r\nPL: ".bot::okc_calculatePL($buyd_price,$last_price);
-die;
+// $okcPL_constant="0.31914893617";
+// $buyd_price="235.91";
+// $last_price="235.64";
+// echo "\r\nPL: ".bot::okc_calculatePL($buyd_price,$last_price);
+// die;
 
 
 //testing backtest data
