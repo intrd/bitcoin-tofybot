@@ -54,14 +54,14 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 //$params = array('api_key' => $secrets["API_KEY"]);
 //$result = $client -> userinfoApi($params);
 
-$params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
-$result = $client -> tickerFutureApi($params);
+//$params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
+//$result = $client -> tickerFutureApi($params);
 
 // $params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
 // $result = $client -> tradesFutureApi($params);
 
-// $params = array('api_key' => $secrets["API_KEY"]);
-// $result = $client -> userinfoFutureApi($params);
+//$params = array('api_key' => $secrets["API_KEY"]);
+//$result = $client -> userinfoFutureApi($params);
 
 // $params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week');
 // $result = $client -> positionFutureApi($params);
@@ -69,9 +69,30 @@ $result = $client -> tickerFutureApi($params);
 // $params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
 // $result = $client -> singleBondPositionFutureApi($params);
 
-print_r($result);
+// $params = array(
+//   'api_key' => $secrets["API_KEY"], 
+//   'symbol' => 'btc_usd', 
+//   'contract_type' => 'this_week',  
+//   'amount' => '1', 
+//   'type'=> '1', 
+//   'price' => '636.23',
+//   'match_price'=> '0',
+//   'lever_rate' => '20');
+// $result = $client->tradeFutureApi($params);
+
+// print_r($result);
+// die;
+
+
+$okcPL_constant="0.31914893617";
+$buyd_price="235.91";
+$last_price="235.64";
+echo "\r\nPL: ".bot::okc_calculatePL($buyd_price,$last_price);
+die;
 
 
 //testing backtest data
 $file=$conf["data_path"]."2016-10-19.2016-10-20.tsv";
 bot::backtesting_getTSV($file);
+
+
