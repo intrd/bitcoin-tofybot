@@ -38,6 +38,9 @@ $db_path=$conf["data_path"].$conf["dbfile"];
 if (!file_exists($conf["data_path"]."secrets.ini")) die("\n*** secrets.ini does no exist.\n");
 $secrets = parse_ini_file($conf["data_path"]."secrets.ini", false);
 
+$positions=array(); //starta as positions
+$uinfo=array();
+
 bot::hello(); //bot welcome screen
 
 
@@ -60,11 +63,16 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 // $params = array('symbol' => 'btc_usd', 'contract_type' => 'this_week');
 // $result = $client -> tradesFutureApi($params);
 
-//$params = array('api_key' => $secrets["API_KEY"]);
-//$result = $client -> userinfoFutureApi($params);
+// $params = array('api_key' => $secrets["API_KEY"]);
+// $result = $client -> userinfoFutureApi($params);
+// print_r($result);
+// die;
+
 
 // $params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week');
 // $result = $client -> positionFutureApi($params);
+// print_r($result);
+// die;
 
 // $params = array('api_key' => $secrets["API_KEY"], 'symbol' => 'btc_usd', 'contract_type' => 'this_week', 'type' => 1);
 // $result = $client -> singleBondPositionFutureApi($params);
@@ -80,19 +88,45 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 //   'lever_rate' => '20');
 // $result = $client->tradeFutureApi($params);
 
-// print_r($result);
-// die;
+ //print_r($result);
+ //die;
+
+//0.03317952
+ 
 
 
-// $okcPL_constant="0.31914893617";
 // $buyd_price="235.91";
 // $last_price="235.64";
-// echo "\r\nPL: ".bot::okc_calculatePL($buyd_price,$last_price);
+// echo "\r\nPL: ".bot::backtesting_OKCcalculatePL($buyd_price,$last_price);
 // die;
+
+$okcPL_constant="0.31914893617";
+$lever="20";
+$okcFuturesFee="0.03";
+$available="0.03317952";
+
+$uinfo=bot::backtesting_userInfo($available,$lever);
+var_dump($uinfo);
+
+$amount="0.157468";
+$price="635.05";
+$type="short";
+$position=bot::backtesting_openPos($type,$amount,$price,$lever);
+var_dump($position);
+var_dump($uinfo);
+//$position=bot::backtesting_updatePos($position["id"],"636.62"); //checa pl's sem fechar a posicao
+//var_dump($position);
+$position=bot::backtesting_updatePos($position["id"],"635.28",$close=true);
+var_dump($position);
+var_dump($uinfo);
+die;
 
 
 //testing backtest data
 $file=$conf["data_path"]."2016-10-19.2016-10-20.tsv";
-bot::backtesting_getTSV($file);
-
-
+$file=bot::backtesting_getTSV($file);
+//var_dump($file);
+//die;
+$datetime="2016-10-18 00:27:59";
+$price=bot::backtesting_getPriceByDatetime($file, $datetime);
+echo $price;
