@@ -71,5 +71,7 @@ $result = $client -> tickerFutureApi($params);
 
 print_r($result);
 
+
+//testing backtest data
 $file=$conf["data_path"]."2016-10-19.2016-10-20.tsv";
 bot::backtesting_getTSV($file);

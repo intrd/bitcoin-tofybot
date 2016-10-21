@@ -46,12 +46,12 @@ Installation
 System requiriments & dependencies
 
 ```
-$ sudo apt-get update & apt-get upgrade
+$ sudo apt-get update & sudo apt-get upgrade
 $ sudo apt-get install curl git php5-curl php5-cli
 $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 Now download the package (Composer automatically install all dependencies)
-$ git clone https://github.com/intrd/bitcoin-tofybot && cd tofybot
+$ git clone https://github.com/intrd/bitcoin-tofybot && cd bitcoin-tofybot
 $ composer install -o
 
 To check for update..
