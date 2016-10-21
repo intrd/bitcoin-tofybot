@@ -103,7 +103,7 @@ $client = new okc(new OKCoin_ApiKeyAuthentication($secrets["API_KEY"], $secrets[
 $okcPL_constant="0.31914893617";
 $lever="20";
 $okcFuturesFee="0.03";
-$available="0.03317952";
+$available="10";
 
 $uinfo=bot::backtesting_userInfo($available,$lever);
 var_dump($uinfo);
