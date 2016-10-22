@@ -62,7 +62,7 @@ $ git pull && composer update
 ```
 ## Usage
 
-1. Request w/ developers the secret.ini (it contains you serial number) 
+1. Request secret.ini w/ developers (it contains you serial number to decrypt bot brain) 
 2. Review config.ini, and..
 
 ```
