@@ -2,4 +2,5 @@ composer.lock
 vendor
 TMP
 LOGS
-DATA
+DATA/secrets.ini
+src/brain.php

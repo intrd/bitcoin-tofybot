@@ -134,6 +134,10 @@ class OKCoin extends OKCoinBase {
 		return $this -> post("/api/v1/future_order_info.do", $params);
 	}
 
+	public function getOrdersFutureApi($params = null) {
+		return $this -> post("/api/v1/future_orders_info.do", $params);
+	}
+
 	//取消期货订单
 	public function cancelFutureApi($params = null) {
 		return $this -> post("/api/v1/future_cancel.do", $params);
