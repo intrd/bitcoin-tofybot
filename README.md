@@ -40,6 +40,8 @@ TOFY - bitcoin trader bot (former HAL10K)
 </span>
 <!-- @docbloc 1.1 -->
 
+This is a reboot of my old HAL10K traderbot who had deprecated the project after the MTGox crash. Now it is a modular and structured project!
+
 Installation
 ============
 
