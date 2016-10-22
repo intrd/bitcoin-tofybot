@@ -60,14 +60,12 @@ $ git pull && composer update
 ```
 ## Usage
 
-1. Create empty dirs, LOGS, TMP
-2. Request DATA dir content..
-3. Review config.ini, and..
+1. Request w/ developers the secret.ini (it contains you serial number) 
+2. Review config.ini, and..
 
 ```
 $ ./run.sh
 ```
 
-That's all, <br/>
-Script this 4 your needs and respect the CC license.
+
 

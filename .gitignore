@@ -1,6 +1,4 @@
 composer.lock
 vendor
-TMP
-LOGS
 DATA/secrets.ini
 src/brain.php
