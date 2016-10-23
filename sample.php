@@ -43,6 +43,7 @@ $algorithm=$conf["root"].$conf["algorithm"];
 $algorithm_cry=$conf["root"].$conf["algorithm_cry"];
 $positions=array(); 
 $uinfo=array();
+$orders=array();
 
 if (!file_exists($conf["data_path"]."secrets.ini")) die("\r\n*** secrets.ini does no exist, request it w/ developers.\r\n");
 $secrets = parse_ini_file($conf["data_path"]."secrets.ini", false);
