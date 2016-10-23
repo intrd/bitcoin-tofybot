@@ -2,3 +2,4 @@ composer.lock
 vendor
 DATA/secrets.ini
 src/brain.php
+src/algorithm.php

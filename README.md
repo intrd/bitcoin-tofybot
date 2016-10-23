@@ -34,7 +34,7 @@ TOFY - bitcoin trader bot (former HAL10K)
 </tr>
 <tr>
 <th>Dependencies</th>
-<td> &#8226; php >=5.3.0 &#8226; intrd/php-common >=1.0.x-dev <dev-master &#8226; intrd/sqlite-dbintrd >=1.0.x-dev <dev-master</td>
+<td> &#8226; php >=5.3.0 &#8226; intrd/php-common >=1.0.x-dev <dev-master &#8226; intrd/sqlite-dbintrd >=1.0.x-dev <dev-master &#8226; intrd/php-mcrypt256CBC >=1.0.x-dev <dev-master</td>
 </tr>
 </table>
 </span>
