@@ -40,7 +40,7 @@ TOFY - bitcoin trader bot (former HAL10K)
 </span>
 <!-- @docbloc 1.1 -->
 
-This is a reboot of my old HAL10K traderbot who had deprecated the project after the MTGox crash. Now it is a modular and structured project!
+A reboot of my old traderbot HAL10K that i had deprecated the project after the MTGox crash. 
 
 Installation
 ============
@@ -49,7 +49,7 @@ System requiriments & dependencies
 
 ```
 $ sudo apt-get update & sudo apt-get upgrade
-$ sudo apt-get install curl git php5-curl php5-cli
+$ sudo apt-get install curl git php5-curl php5-cli php5-mcrypt 
 $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 Now download the package (Composer automatically install all dependencies)
