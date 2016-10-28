@@ -7,8 +7,8 @@
 # @link http://github.com/intrd/bitcoin-tofybot
 # @author intrd (Danilo Salles) - http://dann.com.br
 # @author rafadefine (Rafael) - http://nonononno.com
-# @copyright (CC-BY-SA-4.0) 2016, intrd
-# @license Creative Commons Attribution-ShareAlike 4.0 - http://creativecommons.org/licenses/by-sa/4.0
+# @copyright (proprietary) 2016, intrd
+# @license Proprietary software - https://en.wikipedia.org/wiki/Proprietary_software
 # Dependencies: 
 # - php >=5.3.0
 # - intrd/php-common >=1.0.x-dev <dev-master

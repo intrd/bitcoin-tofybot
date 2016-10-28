@@ -26,11 +26,11 @@ TOFY - bitcoin trader bot (former HAL10K)
 <td>rafadefine (Rafael) - http://nonononno.com</td>
 <tr>
 <th>Copyright</th>
-<td>(CC-BY-SA-4.0) 2016, intrd</td>
+<td>(proprietary) 2016, intrd</td>
 </tr>
 <tr>
 <th>License</th>
-<td><a href='http://creativecommons.org/licenses/by-sa/4.0'>Creative Commons Attribution-ShareAlike 4.0</a></td>
+<td><a href='https://en.wikipedia.org/wiki/Proprietary_software'>Proprietary software</a></td>
 </tr>
 <tr>
 <th>Dependencies</th>
@@ -40,7 +40,9 @@ TOFY - bitcoin trader bot (former HAL10K)
 </span>
 <!-- @docbloc 1.1 -->
 
-A reboot of my old traderbot HAL10K that i had deprecated the project after the MTGox crash. 
+A reboot of my old HAL10K traderbot that was deprecated on MTGox crash. (new algos/techniques, new approach, starting w/ proprietary licensed software)
+
+* Working and profiting on OKCoin Futures
 
 Installation
 ============

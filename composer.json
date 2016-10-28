@@ -17,7 +17,7 @@
                 "role": "Developer"
             }
         ],
-    "license": "CC-BY-SA-4.0",
+    "license": "proprietary",
     "require": {
         "php": ">=5.3.0",
         "intrd/php-common": ">=1.0.x-dev <dev-master",
@@ -33,7 +33,7 @@
     "extra": {
         "author_twitter":"intrd",
         "copyright_author":"intrd",
-        "license_title":"Creative Commons Attribution-ShareAlike 4.0",
-        "license_url":"http://creativecommons.org/licenses/by-sa/4.0"
+        "license_title":"Proprietary software",
+        "license_url":"https://en.wikipedia.org/wiki/Proprietary_software"
     }
 }
