@@ -62,8 +62,9 @@ $ git pull && composer update
 ```
 ## Usage
 
-1. Request secret.ini w/ developers (it contains you serial number to decrypt the bot's brain) 
-2. Review config.ini, and..
+1. Rename secrets_sample.ini to secrets.ini.  
+2. Open secrets.ini and change ENCRYPTION_KEY to serial number given to you (Request it from developers. Yes, its needed to decrypt/run this bot) 
+3. Review config.ini, and..
 
 ```
 $ ./run.sh
