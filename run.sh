@@ -25,7 +25,7 @@ while true
 do
 	echo "
 	$TIMESTAMP STARTING.." >> $LOGFILE 
-	php sample.php 2>&1 | tee -a $LOGFILE
+	php start.php 2>&1 | tee -a $LOGFILE
 	sleep 5
 done
 
