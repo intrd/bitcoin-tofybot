@@ -23,7 +23,7 @@ TOFY - bitcoin trader bot (former HAL10K)
 <td>intrd (Danilo Salles) - http://dann.com.br
 <tr>
 <th>Author</th>
-<td>rafadefine (Rafael) - http://nonononno.com</td>
+<td>rafadefine (Rafael) - http://</td>
 <tr>
 <th>Copyright</th>
 <td>(proprietary) 2016, intrd</td>
