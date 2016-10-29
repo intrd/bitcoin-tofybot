@@ -40,7 +40,7 @@ TOFY - bitcoin trader bot (former HAL10K)
 </span>
 <!-- @docbloc 1.1 -->
 
-A reboot of my old HAL10K traderbot that was deprecated on MTGox crash. (new algos, new approach, starting w/ proprietary licensed software)
+A reboot of my old HAL10K traderbot that was deprecated on MTGox crash. (new algos, new approach)
 
 * Working and profiting on OKCoin Futures
 
