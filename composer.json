@@ -13,7 +13,7 @@
             {
                 "name": "rafadefine (Rafael)",
                 "email": "rafaeldefine@gmail.com",
-                "homepage": "http://",
+                "homepage": "http://nosite.xxx",
                 "role": "Developer"
             }
         ],
@@ -22,7 +22,8 @@
         "php": ">=5.3.0",
         "intrd/php-common": ">=1.0.x-dev <dev-master",
         "intrd/sqlite-dbintrd": ">=1.0.x-dev <dev-master",
-        "intrd/php-mcrypt256CBC": ">=1.0.x-dev <dev-master"
+        "intrd/php-mcrypt256CBC": ">=1.0.x-dev <dev-master",
+        "j7mbo/twitter-api-php": "dev-master"
     },
     "autoload": {
         "psr-4": {

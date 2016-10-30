@@ -7,7 +7,7 @@
 * @tags bitcoin, bot, eggdrop, php, okcoin
 * @link http://github.com/intrd/bitcoin-tofybot
 * @author intrd (Danilo Salles) - http://dann.com.br
-* @author rafadefine (Rafael) - http://
+* @author rafadefine (Rafael) - http://nosite.xxx
 * @copyright (proprietary) 2016, intrd
 * @license Proprietary software - https://en.wikipedia.org/wiki/Proprietary_software
 * Dependencies: 
@@ -15,6 +15,7 @@
 * - intrd/php-common >=1.0.x-dev <dev-master
 * - intrd/sqlite-dbintrd >=1.0.x-dev <dev-master
 * - intrd/php-mcrypt256CBC >=1.0.x-dev <dev-master
+* - j7mbo/twitter-api-php dev-master
 *** @docbloc 1.1 */
 
 if (1==1 //1==1 = whitelist disabled
