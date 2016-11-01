@@ -36,10 +36,11 @@ TIMESTAMP=`date "+%Y-%m-%d_%H:%M:%S"`
 LOGFILE="LOGS/tofybot_run.log"
 touch $LOGFILE
 
+echo "
+$TIMESTAMP STARTING.." >> $LOGFILE 
+
 while true
 do
-	echo "
-	$TIMESTAMP STARTING.." >> $LOGFILE 
 	php start.php 2>&1 | tee -a $LOGFILE
 	#sleep 5
 done
