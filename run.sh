@@ -18,6 +18,20 @@
 ## @docbloc 1.1
 
 #!/bin/bash
+
+echo "
+ _         __       
+| |       / _|      
+| |_ ___ | |_ _   _ 
+| __/ _ \|  _| | | |
+| || (_) | | | |_| |
+ \__\___/|_|  \__, |
+               __/ |
+              |___/ 
+tofy v1.0 
+bitcoin trader bot (former HAL10K) 
+..loading"
+
 TIMESTAMP=`date "+%Y-%m-%d_%H:%M:%S"`
 LOGFILE="LOGS/tofybot_run.log"
 touch $LOGFILE
@@ -27,7 +41,7 @@ do
 	echo "
 	$TIMESTAMP STARTING.." >> $LOGFILE 
 	php start.php 2>&1 | tee -a $LOGFILE
-	sleep 5
+	#sleep 5
 done
 
 
