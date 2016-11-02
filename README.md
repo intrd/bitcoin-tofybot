@@ -57,10 +57,6 @@ $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/lo
 Now download the package (Composer automatically install all dependencies)
 $ git clone https://github.com/intrd/bitcoin-tofybot && cd bitcoin-tofybot
 $ composer install -o
-$ composer install -o (yes, twice to regenerate autload lib)
-
-To check for update..
-$ git pull && composer update
 
 ```
 ## Usage
@@ -80,5 +76,9 @@ $ ./run.sh backtesting intrd_okcoinUSDfutures
 $ ./run.sh paper live_okcoinUSDfutures true  //0 to reset balance/positions
 ```
 
+## Update
 
+```
+$ ./update.sh
 
+```
