@@ -67,7 +67,7 @@ $ composer install -o
 
 ```
 # Backtesting # Cryptowat.ch - okcoinUSDfutures (1min interval), 24 hours ago
-$ ./run.sh paper cryptowat_okcoinUSDfutures
+$ ./run.sh backtesting cryptowat_okcoinUSDfutures
 
 # Backtesting # INTRD Records - okcoinUSDfutures (custom interval or 10s minimum), since 10/28/2016 01:43:19
 $ ./run.sh backtesting intrd_okcoinUSDfutures
