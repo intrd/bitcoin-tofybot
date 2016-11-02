@@ -21,7 +21,7 @@
 
 rm src/*.php
 git fetch --all && git reset --hard origin/master  
-git install -o
+composer install -o
 
 
 
