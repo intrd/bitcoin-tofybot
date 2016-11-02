@@ -26,7 +26,6 @@ sleep 3
 composer install -o
 sleep 2
 composer update -o
-rm src/*.php
 
 
 
