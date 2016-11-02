@@ -70,7 +70,14 @@ $ git pull && composer update
 3. Review `config.ini`, and..
 
 ```
-$ ./run.sh
+# Backtesting # Cryptowat.ch - okcoinUSDfutures (1min interval), 24 hours ago
+$ ./run.sh paper cryptowat_okcoinUSDfutures
+
+# Backtesting # INTRD Records - okcoinUSDfutures (custom interval or 10s minimum), since 10/28/2016 01:43:19
+$ ./run.sh backtesting intrd_okcoinUSDfutures
+
+# Paper # OkCoinUSDfutures LIVE API
+$ ./run.sh paper live_okcoinUSDfutures true  //0 to reset balance/positions
 ```
 
 

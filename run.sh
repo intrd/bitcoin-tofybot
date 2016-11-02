@@ -41,7 +41,7 @@ $TIMESTAMP STARTING.." >> $LOGFILE
 
 while true
 do
-	php start.php 2>&1 | tee -a $LOGFILE
+	php start.php $1 $2 $3 2>&1 | tee -a $LOGFILE
 	#sleep 5
 done
 
