@@ -22,7 +22,10 @@
 rm src/*.php
 git fetch --all && git reset --hard origin/1.0
 composer install -o
+sleep 2
 composer install -o
+sleep 2
+composer update -o
 
 
 
