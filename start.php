@@ -28,7 +28,6 @@ use php\mcrypt256cbc as cry;
 if (!file_exists("config.ini")) die("\r\n*** config.ini does no exist.\r\n");
 $conf = parse_ini_file("config.ini", false);
 
-date_default_timezone_set($conf["timezone"]); 
 $conf["root"]=dirname(__FILE__)."/";
 $conf["ext_path"]=$conf["root"].$conf["ext"];
 $conf["tmp_path"]=$conf["root"].$conf["tmp"];
@@ -45,6 +44,9 @@ $algorithm_cry=$conf["root"].$conf["algorithm_cry"];
 $positions=array(); 
 $uinfo=array();
 $orders=array();
+
+date_default_timezone_set($conf["timezone"]); 
+$timez=$conf["timezone"];
 
 if (!file_exists($conf["data_path"]."secrets.ini")) die("\r\n*** secrets.ini does no exist, request it w/ developers.\r\n");
 $secrets = parse_ini_file($conf["data_path"]."secrets.ini", false);
