@@ -59,6 +59,9 @@ $settings = array(
 $t_users=$secrets["t_users"];
 $twitter = new TwitterAPIExchange($settings);
 
+$tele_token=$secrets["tele_token"];
+$tele_chatid=$secrets["tele_chatid"];
+
 if (!defined('ENCRYPTION_KEY')) define('ENCRYPTION_KEY', $secrets["ENCRYPTION_KEY"]);
 
 if (!file_exists($brain)){
