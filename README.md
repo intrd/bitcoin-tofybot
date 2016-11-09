@@ -23,7 +23,7 @@ TOFY - bitcoin trader bot (former HAL10K)
 <td>intrd (Danilo Salles) - http://dann.com.br
 <tr>
 <th>Author</th>
-<td>rafadefine (Rafael) - http://nosite.xxx</td>
+<td>Rafael (Rafael Def) - http://nosite.xxx</td>
 <tr>
 <th>Copyright</th>
 <td>(proprietary) 2016, intrd</td>
@@ -41,6 +41,8 @@ TOFY - bitcoin trader bot (former HAL10K)
 <!-- @docbloc 1.1 -->
 
 A reboot of my old HAL10K traderbot that was deprecated on MTGox crash. (new algos, new approach)
+
+![running_win](/imgs/output.gif?raw=true "sample")
 
 * Working on OKCoin Futures
 
