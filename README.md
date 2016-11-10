@@ -59,7 +59,7 @@ $ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/lo
 Now download the package (Composer automatically install all dependencies)
 $ git clone https://github.com/intrd/bitcoin-tofybot && cd bitcoin-tofybot
 $ composer install -o
-$ composer install -o (yes, twice to rebuild autoload)
+$ composer update -o
 
 ```
 ## Usage
@@ -84,5 +84,6 @@ $ ./run.sh paper live_okcoinUSDfutures 0
 
 ```
 $ ./update.sh
+$ composer update -o
 
 ```
