@@ -69,13 +69,13 @@ $ composer install -o (yes, twice to rebuild autoload)
 3. Review `config.ini`, and..
 
 ```
-# Backtesting # Cryptowat.ch - okcoinUSDfutures (1min interval), 24 hours ago
+Backtesting # Cryptowat.ch - okcoinUSDfutures (1min interval), 24 hours ago
 $ ./run.sh backtesting cryptowat_okcoinUSDfutures 0
 
-# Backtesting # INTRD Records - okcoinUSDfutures (custom interval or 10s minimum), since 10/28/2016 01:43:19
+Backtesting # INTRD Records - okcoinUSDfutures (custom interval or 10s minimum), since 10/28/2016 01:43:19
 $ ./run.sh backtesting intrd_okcoinUSDfutures 0
 
-# Paper # OkCoinUSDfutures LIVE API
+Paper # OkCoinUSDfutures LIVE API
 $ ./run.sh paper live_okcoinUSDfutures 0
 * Set the last argument to 1, to reset balance/orders/positions. 
 ```
