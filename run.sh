@@ -37,7 +37,8 @@ LOGFILE="LOGS/tofybot_run.log"
 touch $LOGFILE
 
 echo "
-$TIMESTAMP STARTING.." >> $LOGFILE 
+$TIMESTAMP Tofy v1.0 - bitcoin trader bot (former HAL10K) 
+STARTING.." >> $LOGFILE 
 
 while true
 do
